@@ -1,7 +1,10 @@
 # INEUit — AI Text Detection App
 
-INEUit is an AI Text Detection web application built as a project for my Elective class.
-The app analyzes text input and determines whether it was written by a human or AI.
+INEUit was initially powered by ZeroGPT’s detection model through an API.
+Later, I remade and enhanced the app to use my own fine-tuned DistilBERT model, allowing me to experiment with deploying and connecting a custom NLP model to a frontend interface.
+
+This project primarily demonstrates my knowledge of frontend development and API integration — not the accuracy of AI detection itself.
+The fine-tuned model’s predictions are not entirely accurate and serve only as a proof of concept.
 
 # Project Overview
 
