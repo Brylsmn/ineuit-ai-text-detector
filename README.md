@@ -23,11 +23,11 @@ If the Space is inactive or sleeping, the app may take time to load or may not r
 
 # Tech Stack
 
--Frontend: React (Vite + Tailwind CSS)
--Model Backend: Fine-tuned DistilBERT hosted on Hugging Face Spaces
--Deployment:
- -Frontend on Vercel
- -Model API on Hugging Face Spaces
+* Frontend: React (Vite + Tailwind CSS)
+* Model Backend: Fine-tuned DistilBERT hosted on Hugging Face Spaces
+* Deployment:
+  * Frontend on Vercel
+  * Model API on Hugging Face Spaces
 
 **Note:**
 INEUit does not use a separate backend server.
