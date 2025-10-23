@@ -1,16 +1,35 @@
-# React + Vite
+# INEUit — AI Text Detection App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+INEUit is an AI Text Detection web application built as a project for my Elective class.
+The app analyzes text input and determines whether it was written by a human or AI.
 
-Currently, two official plugins are available:
+# Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Originally, INEUit used ZeroGPT’s detection model through an API integration.
+It has since been remade and improved to use my own fine-tuned DistilBERT model, resulting in a more accurate and personalized detection system.
 
-## React Compiler
+This project demonstrates how a machine learning model hosted on Hugging Face Spaces can be seamlessly integrated into a frontend web app for real-world AI applications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Live Demo
 
-## Expanding the ESLint configuration
+Try the app here: https://ineuit.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Note:**
+The app’s functionality depends on the availability of the model hosted on Hugging Face Spaces.
+If the Space is inactive or sleeping, the app may take time to load or may not respond until the Space is running again.
+
+# Tech Stack
+
+-Frontend: React (Vite + Tailwind CSS)
+-Model Backend: Fine-tuned DistilBERT hosted on Hugging Face Spaces
+-Deployment:
+ -Frontend on Vercel
+ -Model API on Hugging Face Spaces
+
+**Note:**
+INEUit does not use a separate backend server.
+The frontend communicates directly with the Hugging Face API endpoint where the model is deployed.
+
+# License
+This project is for **educational** and **portfolio demo** purposes only.
+Models and datasets used belong to their respective owners.
